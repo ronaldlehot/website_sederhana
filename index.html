@@ -35,6 +35,232 @@
           <p class="deskripsi"> KOCAK GAMING </p>
           <h2>Tetap Santuy, Selalu Menyerah</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, velit!</p>
+          <p>  balok asw = new balok() ;
+
+            asw.Panjang = 5;
+            asw.Lebar = 4;
+            asw.Tinggi = 3;
+
+            Console.WriteLine(" volume balok adalah {0}",asw.volumebalok ());
+            Console.WriteLine(" luas balok adalah {0}",asw.luasbalok());
+
+      class balok
+    {
+        //enkapsulasi
+        // field balok
+        private double _panjang;
+        private double _lebar;
+        private double _tinggi;
+
+
+        //properti untuk field panjang 
+        public double Panjang
+        {
+            get { return _panjang; }
+            set
+            {
+                if (value > 0)
+                    _panjang = value;
+                else
+                    _panjang = 1;
+            }
+        
+        }
+        //properti untuk field lebar 
+        public double Lebar
+        {
+            get { return _lebar; }
+            set
+            {
+                if (value > 0)
+                    _lebar = value;
+                else
+                    _lebar = 1;
+            }
+        }
+       //properti untuk field tinggi
+       public double Tinggi
+        {
+            get { return _tinggi; }
+            set
+            {
+                if (value > 0)
+                    _tinggi = value;
+                else
+                    _lebar = 1;
+            }
+
+        }
+
+        //method untuk menghitung volume balok 
+        public double volumebalok()
+        {
+            return Panjang * Lebar * Tinggi;
+        }
+
+        // method untuk menghitung luas balok 
+
+        public double luasbalok()
+        {
+            return ((2 * Panjang * Lebar) + (2 * Panjang * Tinggi) + (2 * Lebar * Tinggi));
+        }</p>
+
+        <p> Console.WriteLine("Fransisco Ronaldo Lehot");
+          Console.WriteLine(" NIM : 2006080029");
+          Console.WriteLine();
+          Console.WriteLine();
+          anjing myAnjing;
+
+          myAnjing = new anjing();
+
+          myAnjing.nama = "Rajo";
+          myAnjing.umur = 8;
+          myAnjing.warna_bulu = "coklat";
+          myAnjing.jumlah_kaki = 4;
+
+
+
+          Console.WriteLine("Nama anjing saya adalah {0}", myAnjing.nama);
+          Console.WriteLine("anjing  saya memiliki kaki sebanyak {0}", myAnjing.jumlah_kaki);
+          Console.WriteLine("anjing  saya berumur {0}", myAnjing.umur);
+          Console.WriteLine("anjing  saya memiliki warna bulu {0}", myAnjing.warna_bulu);
+          Console.WriteLine();
+          Console.WriteLine();
+          myAnjing.Berlari();
+          myAnjing.Tidur();
+          myAnjing.Makan();
+          myAnjing.Menggonggong();
+
+          Console.ReadLine();
+      //field
+      public string warna_bulu;
+      public string nama;
+      public int umur;
+      public int jumlah_kaki;
+
+      //method
+
+      public void Berlari()
+      {
+          Console.WriteLine("{0} sedang berlari mengejar kucing dengan kencang.", nama);
+
+      }
+
+      public void Tidur()
+      {
+          Console.WriteLine("{0} sedang tidur dengan boneka kesayangannya.", nama);
+
+      }
+
+      public void Makan()
+      {
+          Console.WriteLine("{0} sedang makan tulang ayam.", nama);
+
+      }
+      public void Menggonggong()
+      {
+          Console.WriteLine("{0} sedang menggonggong tamu yang datang dan mengigitnya.", nama);
+
+      }</p>
+      <p>  Console.WriteLine(  "Fransisco Ronaldo Lehot ");
+        Console.WriteLine(" NIM :2006080029");
+        //field
+        persegipanjang myPersegipanjang;
+        myPersegipanjang = new persegipanjang();
+
+        myPersegipanjang.jmlah_sudut = 4;
+        myPersegipanjang.jmlh_sumbusimetri = 2;
+        myPersegipanjang.sisi= "  berhadapan";
+
+        Console.WriteLine(" persegi panjang memilki jumlah sudut sebanyak {0}",myPersegipanjang.jmlah_sudut);
+
+        Console.WriteLine(" persegi panjang memilki jumlah sumbu simetri sebanyak {0}", myPersegipanjang.jmlh_sumbusimetri);
+
+        Console.WriteLine(" persegi panjang memilki sisi yang {0}", myPersegipanjang.sisi);
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        myPersegipanjang.luaspersegipanjang();
+        myPersegipanjang.kelilingpersegipanjang();
+
+        Console.ReadLine();
+     public double panjang = 20;
+    public double lebar = 15;
+    public int jmlh_sumbusimetri;
+    public int jmlah_sudut;
+    public string sisi;
+
+
+    //method
+
+    public void luaspersegipanjang()
+    {
+        double luas;
+        luas = panjang * lebar;
+        Console.WriteLine(" luas dari persegi panjang adalah {0}",luas);
+    }
+
+    public void kelilingpersegipanjang()
+    {
+        double keliling;
+        keliling = 2 * panjang + 2 * lebar;
+        Console.WriteLine(" keliling dari persegi panjang adalah {0}",keliling);</p>
+
+        <p> 
+         Monster a = new Monster();
+
+            a.goodlooking = 100;
+            a.healt = 80;
+            a.kekuatan = 100;
+
+            Console.WriteLine(" presentasi Good looking dari monter {0} ", a.goodlooking) ;
+            Console.WriteLine(" presentasi healt dari monster {0}",a.healt);
+            Console.WriteLine(" presentasi kekuatan dari monster {0} ",a.kekuatan);
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine("perilaku :");
+            a.menyerang();
+            a.melarikandiri();
+
+            Monsterlaut c = new Monsterlaut();
+            c.berenang();
+
+            MonsterGurita b = new MonsterGurita();
+
+            b.menyerang();
+         //field 
+        public int healt;
+        public int kekuatan;
+        public int goodlooking;
+
+
+        //property
+        public virtual void  menyerang ()
+        {
+            Console.WriteLine(  "monter menyerang ");
+        }
+
+        public virtual void melarikandiri ()
+        {
+            Console.WriteLine( " monter melarikan diri  ");
+        }
+       class Monsterlaut:Monster
+    {
+        public  void berenang()
+        {
+            Console.WriteLine(" monster berenang");
+        }
+
+    }
+     class MonsterGurita:Monsterlaut
+    {
+        public override void menyerang()
+        {
+            Console.WriteLine(" gurita menyerang menggunakan tentakel");
+        }
+    }
+        </p>
           <p><a href="https://ronaldlehot.github.io/ronaldlehot/"class="tbl-pink">Pelajari Lebih Lanjut</a></p>
         </div>   
       </section>
@@ -133,6 +359,10 @@
 
       </div>
       <!-- akhir contact -->
+
+      <!-- sing up  -->
+      
+      <!-- akhir sing up  -->
 
       <div id="copyright">
         <div class="wrapper">
